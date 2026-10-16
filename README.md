@@ -23,9 +23,10 @@ A lightweight shell script that watches `adb logcat` for screenshot events and a
 ### Install
 
 ```bash
-# Copy the sync script
-cp android-screenshot-sync.sh ~/Development/tools/
-chmod +x ~/Development/tools/android-screenshot-sync.sh
+# Copy the sync script (any directory works; the launchd plist must point to the same path)
+mkdir -p ~/.local/bin
+cp android-screenshot-sync.sh ~/.local/bin/
+chmod +x ~/.local/bin/android-screenshot-sync.sh
 
 # Create the output directory
 mkdir -p ~/Pictures/android-screenshots
@@ -47,8 +48,8 @@ ADB="$HOME/Library/Android/sdk/platform-tools/adb"
 # Auto-detect first physical device
 ./android-screenshot-sync.sh
 
-# Or specify a device serial
-./android-screenshot-sync.sh R3GL508QQ2M
+# Or specify a device serial (from `adb devices`)
+./android-screenshot-sync.sh <device-serial>
 ```
 
 Output:
@@ -59,7 +60,7 @@ Output:
    Press Ctrl+C to stop
 
 23:31:41 📸 Screenshot detected
-23:31:43 ✅ Screenshot_20260914_233133_TIDAL Debug.jpg
+23:31:43 ✅ Screenshot_20260914_233133_MyApp.jpg
 ```
 
 ### Run in background
