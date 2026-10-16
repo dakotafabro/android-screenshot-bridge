@@ -7,7 +7,7 @@
     <key>ProgramArguments</key>
     <array>
         <!-- Update this path to where you installed the script -->
-        <string>/Users/YOUR_USERNAME/Development/tools/android-screenshot-sync.sh</string>
+        <string>/Users/YOUR_USERNAME/.local/bin/android-screenshot-sync.sh</string>
     </array>
     <key>RunAtLoad</key>
     <false/>
