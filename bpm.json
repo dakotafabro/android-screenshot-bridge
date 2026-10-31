@@ -1,6 +1,6 @@
 {
   "name": "android-screenshot-bridge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "extension",
   "description": "Event-driven screenshot sync from connected Android devices to your local machine. Watches logcat for screenshot events (Samsung SmartCapture, Pixel, AOSP) and auto-pulls new screenshots to a local directory. Zero polling - only acts when a screenshot is actually taken. Closes the visual feedback loop between physical devices and AI agents.",
   "entry": "README.md",
