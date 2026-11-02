@@ -24,7 +24,7 @@ Every screenshot you take while the watcher runs lands on your machine, includin
 
 ## Cost
 
-About 400 tokens of context (`token_cost` in bpm.json). The README calls the runtime cost near zero.
+About 1,100 tokens of context (`token_cost` in bpm.json). The README calls the runtime cost near zero.
 
 ## Check it's working
 
